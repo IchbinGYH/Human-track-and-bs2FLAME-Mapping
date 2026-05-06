@@ -1,0 +1,97 @@
+# ==========================================
+# 1. 深度学习专属大文件与模型权重兜底
+# ==========================================
+*.pth
+*.pt
+*.h5
+*.onnx
+*.ckpt
+*.safetensors
+*.bin
+# 拦截 Mediapipe 等框架常见的 task 模型文件
+*.task 
+
+*.mp4
+*.avi
+*.png
+*.jpg
+*.obj
+*.ply
+
+# ==========================================
+# 2. 根目录可见的巨型压缩包
+# ==========================================
+*.tar
+*.tar.gz
+*.zip
+*.rar
+# 精确拦截截图中的两个大模型压缩包
+/LHM_prior_model.tar
+/LHM_track_model.tar
+
+# ==========================================
+# 3. 数据集、输出与预训练模型目录
+# ==========================================
+/data/
+/train_data/
+/example_data/
+/pretrained_models/
+/debug/
+/debug_vis/
+/exps/
+/bs2flame_mapping/ckpt100/
+/bs2flame_mapping/ckpt200/
+/bs2flame_mapping/data_visualization/
+/bs2flame_mapping/LAM_data/export/
+/bs2flame_mapping/map_test_data/
+/bs2flame_mapping/map_training_data/
+/bs2flame_mapping/render_output/
+/bs2flame_mapping/test_results/
+
+# ==========================================
+# 4. 第三方庞大依赖库 (🔥 修复了带横杠的漏网之鱼)
+# ==========================================
+/thirdparty/
+**/third-party/
+/gfpgan/
+
+# ==========================================
+# 5. Python 基础、编译环境与缓存
+# ==========================================
+**/__pycache__/
+*.pyc
+*.pyo
+*.so
+*.dll
+*.dylib
+*.exe
+/build/
+/dist/
+/venv/
+/.venv/
+.conda/
+/node_modules/
+/yarn.lock
+/package-lock.json
+
+# ==========================================
+# 6. 日志与临时缓存
+# ==========================================
+*.log
+*.tmp
+*.cache
+*.bak
+*.swp
+*.swo
+*.~*
+*.db
+*.sqlite
+
+# ==========================================
+# 7. IDE 配置、系统垃圾与隐私文件
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.secret
