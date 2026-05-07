@@ -34,6 +34,9 @@ python track_video.py --video_path ${VIDEO_PATH} --output_path ${OUTPUT_PATH}
 python track_blendshape.py --video_path ${VIDEO_PATH} --output_path ${OUTPUT_PATH}
 ```
 
-
+### 🏃 Inference More Than 2 videos' Mediapipe
+```bash
+bash ./track_blendshape.sh
+```
 
 
